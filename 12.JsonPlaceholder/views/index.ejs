@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altair JSON Placeholder</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <h1>Welcome to Altair JSON Placeholder</h1>
+        <p>
+          Altair JSON Placeholder is a free online REST API that provides fake
+          data for testing and prototyping. Use it for your front-end, back-end,
+          or mobile app development. All the API Data is hardcoded and looks
+          realistic, making it ideal for testing purposes.
+        </p>
+      </div>
+
+      <h2 class="">Available API Endpoints</h2>
+      <div class="endpoints">
+        <div class="box">
+          <h2>Users</h2>
+          <p>Get all users or a specific user by ID.</p>
+          <p><a href="/users">/users</a>, <a href="/users/1">/users/{id}</a></p>
+        </div>
+
+        <div class="box">
+          <h2>Posts</h2>
+          <p>Retrieve all posts or a specific post.</p>
+          <p><a href="/posts">/posts</a>, <a href="/posts/1">/posts/{id}</a></p>
+        </div>
+
+        <div class="box">
+          <h2>Todos</h2>
+          <p>Fetch all to-dos or a specific to-do.</p>
+          <p><a href="/todos">/todos</a>, <a href="/todos/1">/todos/{id}</a></p>
+        </div>
+
+        <div class="box">
+          <h2>Comments</h2>
+          <p>Get various post comments.</p>
+          <p>
+            <a href="/comments">/comments</a>,
+            <a href="/comments/1">/comments/{id}</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="error-section">
+        <h2>Error Simulations</h2>
+        <p>We provide various error simulations for testing:</p>
+        <p><a href="/404">/404</a> - Not Found</p>
+        <p><a href="/429">/429</a> - Too Many Requests</p>
+        <p><a href="/500">/500</a> - Internal Server Error</p>
+      </div>
+
+      <div class="error-section">
+        <h2>HTTP Methods Support</h2>
+        <p>
+          Our API supports all 5 HTTP request types for full testing:
+          <strong>GET, POST, PUT, PATCH, DELETE.</strong>
+        </p>
+        <div class="row">
+          <span>GET</span>
+          <a href="/request/">/request</a>
+        </div>
+        <div class="row">
+          <span>POST</span>
+          <a>/request</a>
+        </div>
+        <div class="row">
+          <span>DELETE</span>
+          <a>/request</a>
+        </div>
+        <div class="row">
+          <span>PUT</span>
+          <a>/request</a>
+        </div>
+        <div class="row">
+          <span>PATCH</span>
+          <a>/request</a>
+        </div>
+      </div>
+
+      <div class="auth-section">
+        <h2>Authentication Endpoints</h2>
+        <p>
+          Our API includes authentication endpoints for testing login,
+          registration, and logout functionalities.
+        </p>
+
+        <div class="boxes">
+          <div class="auth-box">
+            <h3>Login</h3>
+            <p>Authenticate a user using email and password.</p>
+            <p>
+              <strong>Method:</strong> POST <br />
+              <strong>URL:</strong> <a href="/auth/login/">/login/</a>
+            </p>
+            <pre>
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+          </pre
+            >
+          </div>
+
+          <div class="auth-box">
+            <h3>Register</h3>
+            <p>Create a new user account.</p>
+            <p>
+              <strong>Method:</strong> POST <br />
+              <strong>URL:</strong> <a href="/auth/register/">/register/</a>
+            </p>
+            <pre>
+{
+  "username": "JohnDoe",
+  "email": "johndoe@example.com",
+  "password": "securePass123",
+  "confirmPassword": "securePass123"
+}
+          </pre
+            >
+          </div>
+        </div>
+
+        <div class="auth-box">
+          <h3>Logout</h3>
+          <p>Logout a user.</p>
+          <p>
+            <strong>Method:</strong> POST <br />
+            <strong>URL:</strong> <a href="/auth/logout/">/logout/</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Altair JSON Placeholder. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://github.com/MaverickPoly/" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/altairetech/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Url Shortener</title>
+  </head>
+  <body>
+    <h1>URL Shortener</h1>
+    <p>Fill in the form below to generate short url:</p>
+
+    <form method="POST" action="/shorten">
+      <label for="targetUrl">Target URL:</label>
+      <input type="url" name="targetUrl" required />
+      <button type="submit" class="btn">Shorten</button>
+    </form>
+
+    <% if (shortUrl) { %>
+    <p>Shortened URL: <a href="<%= shortUrl %>"> <%= shortUrl %></a></p>
+    <p>Original URL: <a href="<%= targetUrl %>"> <%= targetUrl %></a></p>
+    <% } %>
+  </body>
+</html>
