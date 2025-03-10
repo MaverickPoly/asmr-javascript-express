@@ -1,6 +1,6 @@
 # ASMR JavaScript Express
 
-A collection of **20 simple Express.js projects** using **Mongoose** and **MongoDB**. These projects cover various concepts, from basic API development to authentication, file uploads and database interactions.
+A collection of **20 simple Express.js projects** using **Mongoose** and **MongoDB**. These projects cover various concepts, from basic API development to authentication, file uploads, and database interactions.
 
 ## 🚀 Features
 - Basic Express.js API development
